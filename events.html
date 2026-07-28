@@ -1,0 +1,210 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- ── Security headers ──────────────────────────────────── -->
+  <meta http-equiv="Content-Security-Policy"
+    content="default-src 'self';
+             script-src 'self' https://cdn.jsdelivr.net;
+             style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;
+             font-src https://fonts.gstatic.com;
+             img-src 'self' data: https://static.wixstatic.com https://lh3.googleusercontent.com https://drive.google.com https://*.googleusercontent.com;
+             connect-src 'self' https://docs.google.com https://formspree.io;
+             frame-src 'none';
+             frame-ancestors 'none';
+             base-uri 'self';
+             form-action 'self' https://formspree.io;">
+  <meta http-equiv="X-Frame-Options" content="DENY">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <!-- ─────────────────────────────────────────────────────── -->
+
+  <title>Events — STARS Club</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet">
+  <link rel="icon" type="image/png"
+    href="https://static.wixstatic.com/media/9c6945_8895c32d035f41459816a5f707f67765~mv2.png">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <div class="page-transition-overlay"></div>
+  <div class="page-curtain"></div>
+  <div class="floating-orbs">
+    <div class="orb orb--1"></div>
+    <div class="orb orb--2"></div>
+    <div class="orb orb--3"></div>
+  </div>
+  <div class="grain-overlay"></div>
+  <div class="cursor-spotlight"></div>
+  <div class="scroll-progress"></div>
+  <div class="cursor-dot"></div>
+  <button class="back-to-top" aria-label="Back to top">↑</button>
+
+  <header class="site-header">
+    <a href="index.html" class="brand">
+      <img src="https://static.wixstatic.com/media/9c6945_8895c32d035f41459816a5f707f67765~mv2.png"
+        alt="STARS Club logo">
+      <span class="word">STARS CLUB</span>
+    </a>
+    <button class="menu-toggle" aria-label="Open menu">
+      Menu
+      <span class="burger"><span></span><span></span><span></span></span>
+    </button>
+  </header>
+
+  <nav class="nav-overlay">
+  <ul class="nav-list">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="initiatives.html">Initiatives</a></li>
+    <li><a href="donate.html">Donate</a></li>
+    <li><a href="events.html">Events</a></li>
+    <li><a href="gallery.html">Gallery</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  <div class="nav-meta">
+    <a href="mailto:info@starsclub.ca">info@starsclub.ca</a>
+    <a href="tel:+15874085168">+1 587 408 5168</a>
+    <a href="https://www.facebook.com/profile.php?id=61584946760183" target="_blank" rel="noopener noreferrer">Facebook</a>
+    <a href="https://www.youtube.com/@St.AlbertRecreationSportsCultu" target="_blank" rel="noopener noreferrer">YouTube</a>
+  </div>
+  <div class="brand-mark">
+    <img src="https://static.wixstatic.com/media/9c6945_8895c32d035f41459816a5f707f67765~mv2.png" alt="STARS Club logo">
+    <span class="eyebrow">St. Albert, Alberta</span>
+  </div>
+</nav>
+
+  <main>
+    <section class="hero hero--inner" data-label="What's on">
+      <canvas class="hero-canvas" data-density="0.5"></canvas>
+      <img class="hero-watermark is-logo"
+        src="https://static.wixstatic.com/media/9c6945_8895c32d035f41459816a5f707f67765~mv2.png" alt="">
+      <div class="hero-content">
+        <span class="eyebrow">What's on</span>
+        <h1><span class="line">Game</span><span class="line accent-text">schedule.</span></h1>
+        <p class="lead">From weekly badminton and volleyball drop-ins to seasonal community events — here's what's
+          coming up.</p>
+      </div>
+    </section>
+
+    <section class="bg-elev tight" data-label="Upcoming">
+      <div class="section-head reveal">
+        <span class="eyebrow">Upcoming</span>
+        <h2>Mark your calendar.</h2>
+        <a href="https://4ac7b064-e949-4015-a74d-6b36f08e4e99.filesusr.com/ugd/9c6945_e99103ea51984dc1bb5b4daa3bb9b5dc.pdf"
+          target="_blank" rel="noopener noreferrer" class="btn">Full schedule (PDF) <span class="arrow">→</span></a>
+      </div>
+      
+      <div class="countdown-strip reveal-stagger">
+        <div class="cd-box"><span class="cd-num">Sep–May</span><span class="cd-label">Indoor badminton &amp;
+            volleyball</span></div>
+        <div class="cd-box"><span class="cd-num">Jun–Aug</span><span class="cd-label">Outdoor volleyball</span></div>
+        <div class="cd-box"><span class="cd-num">2nd</span><span class="cd-label">Monthly fee due date</span></div>
+        <div class="cd-box"><span class="cd-num">17+</span><span class="cd-label">Membership minimum age</span></div>
+      </div>
+
+      <div class="inner" style="margin-top:48px;">
+        <!--
+        EVENTS ARE LOADED FROM A GOOGLE SHEET — edit the sheet, the site updates.
+        See README.md "Editable events spreadsheet" section for full setup steps.
+        Sheet columns (in order): DateBig | DateSmall | Title | Description | Category
+      -->
+        <div id="events-list" class="reveal-stagger">
+          <div class="event-row">
+            <div class="event-date"><span class="day">All</span>season</div>
+            <div>
+              <h3>Badminton &amp; Volleyball Drop-In</h3>
+              <p>Recreational, mixed-skill play for members — bring your own racket; nets, poles, and balls are
+                provided.</p>
+            </div>
+            <span class="event-tag">Sport</span>
+          </div>
+        </div>
+        <p id="events-status" class="form-status" style="margin-top:18px;"></p>
+      </div>
+
+    </section>
+
+    <section data-label="Stay in the loop">
+      <div class="split">
+        <div class="media-frame media-reveal tilt reveal">
+          <img src="https://static.wixstatic.com/media/9c6945_187c951853fb4963a025508d4b4616e0~mv2.jpeg"
+            alt="STARS Club sports event">
+        </div>
+        <div class="reveal">
+          <span class="eyebrow">Stay in the loop</span>
+          <h2 style="margin-top:18px;">Never miss<br>a game.</h2>
+          <p style="margin-top:20px;" class="lead">Fees, schedules, and registration details are published as they're
+            confirmed — check the full schedule or follow us on Facebook for live updates.</p>
+          <div style="margin-top:28px; display:flex; gap:16px; flex-wrap:wrap;">
+            <a href="about.html#fees" class="btn btn-solid">See fees &amp; membership <span class="arrow">→</span></a>
+            <a href="https://www.facebook.com/profile.php?id=61584946760183" target="_blank" rel="noopener noreferrer"
+              class="btn">Follow on Facebook <span class="arrow">→</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-grid">
+      <div>
+        <div class="brand footer-reveal" style="margin-bottom:14px;">
+          <img src="https://static.wixstatic.com/media/9c6945_8895c32d035f41459816a5f707f67765~mv2.png"
+            alt="STARS Club logo">
+          <span class="word">STARS CLUB</span>
+        </div>
+        <p>St. Albert Recreation &amp; Sports Cultural Club — building a healthy, inclusive, vibrant community.</p>
+      </div>
+      <div>
+        <h4 class="footer-reveal">Site</h4>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="initiatives.html">Initiatives</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="footer-reveal">Get involved</h4>
+        <ul>
+          <li><a href="donate.html">Donate</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="https://stars-club-link.base44.app" target="_blank" rel="noopener noreferrer">Stars Club Connect</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="footer-reveal">Connect</h4>
+        <ul>
+          <li><a href="mailto:info@starsclub.ca">Email</a></li>
+          <li><a href="tel:+15874085168">WhatsApp</a></li>
+          <li><a href="https://www.facebook.com/profile.php?id=61584946760183" target="_blank"
+              rel="noopener">Facebook</a></li>
+          <li><a href="https://www.youtube.com/@St.AlbertRecreationSportsCultu" target="_blank"
+              rel="noopener">YouTube</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom footer-reveal">
+      <span>© 2026 St. Albert Recreation &amp; Sports Cultural Club</span>
+      <span>St. Albert, Alberta, Canada</span>
+    </div>
+  </footer>
+
+  <script>
+    // Paste your published Google Sheet CSV link below (see README.md → "Editable events spreadsheet").
+    // Leave as-is to keep showing the fallback event row above.
+    window.STARS_EVENTS_SHEET_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vQun-96yXEDEwGLpaXIphYFyGJnyQ2bVt5nSdj1aZ6SAVTwkXtxc_KsiTAFc85SZOnJFDtn1hUgkBwR/pub?gid=1237790182&single=true&output=csv";
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js" integrity="sha384-g4NTh/Iv5PPU4xPyhEWqPcwtNXOvdaDI8LLnyYfyNZOjKJeYQyjzQ9X5275eBjpt" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js" integrity="sha384-Z3REaz79l2IaAZqJsSABtTbhjgOUYyV3p90XNnAPCSHg3EMTz1fouunq9WZRtj3d" crossorigin="anonymous"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

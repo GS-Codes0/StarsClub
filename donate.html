@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- ── Security headers ──────────────────────────────────── -->
+  <meta http-equiv="Content-Security-Policy"
+    content="default-src 'self';
+             script-src 'self' https://cdn.jsdelivr.net;
+             style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;
+             font-src https://fonts.gstatic.com;
+             img-src 'self' data: https://static.wixstatic.com https://lh3.googleusercontent.com https://drive.google.com https://*.googleusercontent.com;
+             connect-src 'self' https://docs.google.com https://formspree.io;
+             frame-src 'none';
+             frame-ancestors 'none';
+             base-uri 'self';
+             form-action 'self' https://formspree.io;">
+  <meta http-equiv="X-Frame-Options" content="DENY">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <!-- ─────────────────────────────────────────────────────── -->
+
+  <title>Donate — STARS Club</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet">
+  <link rel="icon" type="image/png"
+    href="https://static.wixstatic.com/media/9c6945_8895c32d035f41459816a5f707f67765~mv2.png">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <div class="page-transition-overlay"></div>
+  <div class="page-curtain"></div>
+  <div class="floating-orbs">
+    <div class="orb orb--1"></div>
+    <div class="orb orb--2"></div>
+    <div class="orb orb--3"></div>
+  </div>
+  <div class="grain-overlay"></div>
+  <div class="cursor-spotlight"></div>
+  <div class="scroll-progress"></div>
+  <div class="cursor-dot"></div>
+  <button class="back-to-top" aria-label="Back to top">↑</button>
+
+  <header class="site-header">
+    <a href="index.html" class="brand">
+      <img src="https://static.wixstatic.com/media/9c6945_8895c32d035f41459816a5f707f67765~mv2.png"
+        alt="STARS Club logo">
+      <span class="word">STARS CLUB</span>
+    </a>
+    <button class="menu-toggle" aria-label="Open menu">
+      Menu
+      <span class="burger"><span></span><span></span><span></span></span>
+    </button>
+  </header>
+
+  <nav class="nav-overlay">
+  <ul class="nav-list">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="initiatives.html">Initiatives</a></li>
+    <li><a href="donate.html">Donate</a></li>
+    <li><a href="events.html">Events</a></li>
+    <li><a href="gallery.html">Gallery</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  <div class="nav-meta">
+    <a href="mailto:info@starsclub.ca">info@starsclub.ca</a>
+    <a href="tel:+15874085168">+1 587 408 5168</a>
+    <a href="https://www.facebook.com/profile.php?id=61584946760183" target="_blank" rel="noopener noreferrer">Facebook</a>
+    <a href="https://www.youtube.com/@St.AlbertRecreationSportsCultu" target="_blank" rel="noopener noreferrer">YouTube</a>
+  </div>
+  <div class="brand-mark">
+    <img src="https://static.wixstatic.com/media/9c6945_8895c32d035f41459816a5f707f67765~mv2.png" alt="STARS Club logo">
+    <span class="eyebrow">St. Albert, Alberta</span>
+  </div>
+</nav>
+
+  <main>
+    <section class="hero hero--inner" data-label="Support the club">
+      <canvas class="hero-canvas" data-density="0.5"></canvas>
+      <img class="hero-watermark is-logo"
+        src="https://static.wixstatic.com/media/9c6945_8895c32d035f41459816a5f707f67765~mv2.png" alt="">
+      <div class="hero-content">
+        <span class="eyebrow">Support the club</span>
+        <h1><span class="line">Fuel the</span><span class="line accent-text">mission.</span></h1>
+        <p class="lead">We're a newly registered, volunteer-run club. Every donation goes directly toward programs,
+          facilities, and the people who need them.</p>
+      </div>
+    </section>
+
+    <section class="tight" id="give" data-label="Make a difference">
+      <!-- Adjusted grid columns to give the embedded form a bit more width -->
+      <div class="split" style="align-items: flex-start; gap: 40px; grid-template-columns: 1.2fr 1fr;">
+
+        <!-- LEFT MODULE: The actual embedded Zeffy window inside your website -->
+        <div class="reveal" style="display: flex; flex-direction: column; width: 100%;">
+          <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 8px;">
+            <h3 style="font-family: var(--font-display); font-size: 1.8rem; text-transform: uppercase; margin: 0;">
+              Online Payments</h3>
+            <span class="tag-pill"
+              style="color: var(--accent); border-color: var(--accent); font-size: 0.75rem; padding: 2px 8px; border: 1px solid; border-radius: 4px;">In-Site
+              Checkout</span>
+          </div>
+          <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 20px; line-height: 1.5;">
+            Please note: All online payments are securely processed and managed by Zeffy. STARS Club does not directly handle or store your financial information.
+          </p>
+
+          <!-- iframe container sized to 860px height to prevent the ugly scrollbar -->
+          <div
+            style="width: 100%; height: 860px; background: transparent; border-radius: 8px; overflow: hidden; border: 1px solid var(--border);">
+            <iframe
+              src="https://www.zeffy.com/en-CA/embed/ticketing/st-albert-recreation-and-sports-cultural-clubs-donations"
+              style="width: 100%; height: 100%; border: none;" allowpaymentrequest="true"
+              title="STARS Club Donation Form">
+            </iframe>
+          </div>
+        </div>
+
+        <!-- RIGHT MODULE: Direct Local Interac Bank Transfer -->
+        <div class="card reveal"
+          style="border: 1px dashed var(--border-strong); display: flex; flex-direction: column; justify-content: space-between; margin-top: 50px;">
+          <div>
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 14px;">
+              <h3 style="font-family: var(--font-display); font-size: 1.8rem; text-transform: uppercase; margin: 0;">
+                Interac e-Transfer</h3>
+              <span class="tag-pill"
+                style="color: #52b788; border-color: rgba(82,183,136,0.3); background: rgba(82,183,136,0.05); font-size: 0.75rem; padding: 2px 8px; border: 1px solid; border-radius: 4px;">Direct
+                Deposit</span>
+            </div>
+            <p style="font-size: 0.95rem; color: var(--text-muted); line-height: 1.6; margin-bottom: 24px;">
+              Direct bank transfers bypass external payment networks entirely. Ideal for standard monthly local support
+              or custom donation values that route instantly into our local project fund accounts.
+            </p>
+          </div>
+          <div
+            style="background: rgba(247, 246, 242, 0.03); padding: 16px; border-radius: 6px; border: 1px solid var(--border); width: 100%;">
+            <p style="font-family: var(--font-mono); font-size: 0.85rem; margin-bottom: 6px; color: var(--white);">
+              <span style="color: var(--accent);">Transfer Email:</span> treasurer@starsclub.ca
+            </p>
+            <p style="font-size: 0.8rem; color: var(--text-muted); line-height: 1.4;">
+              *Auto-deposit configured. No security verification questions required.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="bg-elev" data-label="Where it goes">
+      <div class="section-head reveal">
+        <span class="eyebrow">Where it goes</span>
+        <h2>Your support<br>builds this.</h2>
+      </div>
+      <div class="grid reveal-stagger">
+        <div class="card">
+          <span class="tag">Facilities</span>
+          <h3>Recreational spaces</h3>
+          <p>Help us acquire, lease, or build community centres and sports facilities for St. Albert.</p>
+        </div>
+        <div class="card">
+          <span class="tag">Programs</span>
+          <h3>Sport &amp; youth development</h3>
+          <p>Fund badminton, volleyball, and recreational programs that are accessible and affordable for everyone.</p>
+        </div>
+        <div class="card">
+          <span class="tag">Care</span>
+          <h3>Seniors &amp; accessibility</h3>
+          <p>Support social services and programs for senior citizens and differently abled individuals.</p>
+        </div>
+        <div class="card">
+          <span class="tag">Education</span>
+          <h3>Scholarships &amp; awards</h3>
+          <p>Provide educational assistance, medals, and prizes to deserving members of the community.</p>
+        </div>
+        <div class="card">
+          <span class="tag">Relief</span>
+          <h3>Emergency response</h3>
+          <p>Stand ready to support individuals and communities affected by disasters through volunteer efforts.</p>
+        </div>
+        <div class="card">
+          <span class="tag">Culture</span>
+          <h3>Events &amp; celebration</h3>
+          <p>Host sports and cultural events that bring St. Albert's communities together.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-elev tight" data-label="See your impact">
+      <div class="section-head reveal" style="text-align:center; align-items:center;">
+        <span class="eyebrow" style="justify-content:center;">See your impact</span>
+        <h2>Drag the slider.</h2>
+      </div>
+      <div class="inner reveal">
+        <div class="impact-calc">
+          <input type="range" id="impactSlider" min="10" max="1000" step="5" value="50"
+            aria-label="Donation amount slider">
+          <div class="impact-readout">
+            <span class="impact-amount" id="impactAmount">$50</span>
+            <p class="impact-text" id="impactText">funds a set of nylon birdies for a season of badminton drop-in.</p>
+          </div>
+          <div class="impact-bar">
+            <div class="impact-bar-fill" id="impactBarFill"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section data-label="Other ways to give">
+      <div class="split">
+        <div class="reveal">
+          <span class="eyebrow">Other ways to give</span>
+          <h2 style="margin-top:18px;">Sponsorship &amp;<br>in-kind support.</h2>
+          <p style="margin-top:20px;" class="lead">Beyond cash gifts, we welcome sponsorships, equipment donations, and
+            partnerships with local businesses — every contribution helps us deliver more programs, sooner.</p>
+          <div style="margin-top:32px; display:flex; gap:16px; flex-wrap:wrap;">
+            <a href="#give" class="btn btn-solid">Give now <span class="arrow">→</span></a>
+            <a href="contact.html" class="btn">Ask about sponsorship <span class="arrow">→</span></a>
+          </div>
+        </div>
+        <div class="media-frame wide media-reveal tilt reveal">
+          <img src="https://static.wixstatic.com/media/9c6945_b77d8e1936f34c399f4e40a59610ccc2~mv2.jpeg"
+            alt="Community fundraising">
+        </div>
+      </div>
+    </section>
+
+    
+  </main>
+
+  <footer>
+    <div class="footer-grid">
+      <div>
+        <div class="brand footer-reveal" style="margin-bottom:14px;">
+          <img src="https://static.wixstatic.com/media/9c6945_8895c32d035f41459816a5f707f67765~mv2.png"
+            alt="STARS Club logo">
+          <span class="word">STARS CLUB</span>
+        </div>
+        <p>St. Albert Recreation &amp; Sports Cultural Club — building a healthy, inclusive, vibrant community.</p>
+      </div>
+      <div>
+        <h4 class="footer-reveal">Site</h4>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="initiatives.html">Initiatives</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="footer-reveal">Get involved</h4>
+        <ul>
+          <li><a href="donate.html">Donate</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="https://stars-club-link.base44.app" target="_blank" rel="noopener noreferrer">Stars Club Connect</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="footer-reveal">Connect</h4>
+        <ul>
+          <li><a href="mailto:info@starsclub.ca">Email</a></li>
+          <li><a href="tel:+15874085168">WhatsApp</a></li>
+          <li><a href="https://www.facebook.com/profile.php?id=61584946760183" target="_blank"
+              rel="noopener">Facebook</a></li>
+          <li><a href="https://www.youtube.com/@St.AlbertRecreationSportsCultu" target="_blank"
+              rel="noopener">YouTube</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom footer-reveal">
+      <span>© 2026 St. Albert Recreation &amp; Sports Cultural Club</span>
+      <span>St. Albert, Alberta, Canada</span>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js" integrity="sha384-g4NTh/Iv5PPU4xPyhEWqPcwtNXOvdaDI8LLnyYfyNZOjKJeYQyjzQ9X5275eBjpt" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js" integrity="sha384-Z3REaz79l2IaAZqJsSABtTbhjgOUYyV3p90XNnAPCSHg3EMTz1fouunq9WZRtj3d" crossorigin="anonymous"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
