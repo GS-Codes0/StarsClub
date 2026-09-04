@@ -1,0 +1,268 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<!-- ── Security headers ──────────────────────────────────── -->
+<meta http-equiv="Content-Security-Policy"
+  content="default-src 'self';
+           script-src 'self' https://cdn.jsdelivr.net;
+           style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;
+           font-src https://fonts.gstatic.com;
+           img-src 'self' data: https://static.wixstatic.com https://lh3.googleusercontent.com https://drive.google.com https://*.googleusercontent.com;
+           connect-src 'self' https://docs.google.com https://formspree.io;
+           frame-src 'none';
+           frame-ancestors 'none';
+           base-uri 'self';
+           form-action 'self' https://formspree.io;">
+<meta http-equiv="X-Frame-Options" content="DENY">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<!-- ─────────────────────────────────────────────────────── -->
+
+<title>Initiatives — STARS Club</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" href="https://static.wixstatic.com/media/9c6945_8895c32d035f41459816a5f707f67765~mv2.png">
+<link rel="stylesheet" href="css/style.css">
+  
+  <style>
+    /* Expands the last two orphan cards and restores the blue divider line */
+    @media (min-width: 1000px) {
+      .grid.cols-4 .card:nth-last-child(2):nth-child(4n + 1) {
+        grid-column: span 2;
+        /* Creates a 1px transparent window to let the blue background shine through */
+        border-right: 1px solid transparent !important;
+        background-clip: padding-box !important;
+      }
+      .grid.cols-4 .card:nth-last-child(1):nth-child(4n + 2) {
+        grid-column: span 2;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<div class="page-transition-overlay"></div>
+<div class="page-curtain"></div>
+<div class="floating-orbs">
+  <div class="orb orb--1"></div>
+  <div class="orb orb--2"></div>
+  <div class="orb orb--3"></div>
+</div>
+<div class="grain-overlay"></div>
+<div class="cursor-spotlight"></div>
+<div class="scroll-progress"></div>
+<div class="cursor-dot"></div>
+<button class="back-to-top" aria-label="Back to top">↑</button>
+
+<header class="site-header">
+  <a href="index.html" class="brand">
+    <img src="https://static.wixstatic.com/media/9c6945_8895c32d035f41459816a5f707f67765~mv2.png" alt="STARS Club logo">
+    <span class="word">STARS CLUB</span>
+  </a>
+  <button class="menu-toggle" aria-label="Open menu">
+    Menu
+    <span class="burger"><span></span><span></span><span></span></span>
+  </button>
+</header>
+
+<nav class="nav-overlay">
+  <ul class="nav-list">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="initiatives.html">Initiatives</a></li>
+    <li><a href="donate.html">Donate</a></li>
+    <li><a href="events.html">Events</a></li>
+    <li><a href="gallery.html">Gallery</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  <div class="nav-meta">
+    <a href="mailto:info@starsclub.ca">info@starsclub.ca</a>
+    <a href="tel:+15874085168">+1 587 408 5168</a>
+    <a href="https://www.facebook.com/profile.php?id=61584946760183" target="_blank" rel="noopener noreferrer">Facebook</a>
+    <a href="https://www.youtube.com/@St.AlbertRecreationSportsCultu" target="_blank" rel="noopener noreferrer">YouTube</a>
+  </div>
+  <div class="brand-mark">
+    <img src="https://static.wixstatic.com/media/9c6945_8895c32d035f41459816a5f707f67765~mv2.png" alt="STARS Club logo">
+    <span class="eyebrow">St. Albert, Alberta</span>
+  </div>
+</nav>
+
+<main>
+  <section class="hero hero--inner" data-label="What we do">
+    <canvas class="hero-canvas" data-density="0.5"></canvas>
+    <img class="hero-watermark is-logo" src="https://static.wixstatic.com/media/9c6945_8895c32d035f41459816a5f707f67765~mv2.png" alt="">
+    <div class="hero-content">
+      <span class="eyebrow">What we do</span>
+      <h1><span class="line">Our</span><span class="line accent-text">initiatives.</span></h1>
+      <p class="lead">Fourteen objectives guide every program we run — from the badminton court to the seniors' centre to the next community fundraiser.</p>
+    </div>
+  </section>
+
+  <section class="bg-elev" data-label="Our objectives">
+    <div class="section-head reveal">
+      <span class="eyebrow">Our objectives</span>
+      <h2>Guided by service,<br>diversity &amp; active living.</h2>
+      <p style="max-width:520px;">At STARS Club, St. Albert, we are committed to building a strong, inclusive, and thriving community. These are the fourteen objectives that guide everything we do.</p>
+    </div>
+    <div class="grid cols-4 reveal-stagger">
+      <div class="card">
+        <span class="glyph">01</span>
+        <span class="tag">Service</span>
+        <h3>Strengthen communities through service</h3>
+        <p>Promote community building, social services, and charitable initiatives across Canada under the auspices of the club.</p>
+      </div>
+      <div class="card">
+        <span class="glyph">02</span>
+        <span class="tag">Inclusion</span>
+        <h3>Celebrate diversity and inclusion</h3>
+        <p>Create meaningful opportunities for social, cultural, and multicultural engagement that bring people together.</p>
+      </div>
+      <div class="card">
+        <span class="glyph">03</span>
+        <span class="tag">Wellbeing</span>
+        <h3>Support mental health and well-being</h3>
+        <p>Enhance social well-being and mental health to cultivate a healthy, positive, and vibrant community.</p>
+      </div>
+      <div class="card">
+        <span class="glyph">04</span>
+        <span class="tag">Care</span>
+        <h3>Care for seniors &amp; differently abled individuals</h3>
+        <p>Support the needs and dignity of senior citizens and differently abled individuals within St. Albert and surrounding areas.</p>
+      </div>
+      <div class="card">
+        <span class="glyph">05</span>
+        <span class="tag">Relief</span>
+        <h3>Provide emergency &amp; humanitarian support</h3>
+        <p>Offer timely assistance to individuals and communities affected by natural disasters through volunteer efforts and donations to qualified beneficiaries, including registered charities.</p>
+      </div>
+      <div class="card">
+        <span class="glyph">06</span>
+        <span class="tag">Volunteering</span>
+        <h3>Promote a culture of volunteering</h3>
+        <p>Encourage, train, and coordinate volunteer activities in the socio-cultural sector as a charitable organization.</p>
+      </div>
+      <div class="card">
+        <span class="glyph">07</span>
+        <span class="tag">Connection</span>
+        <h3>Connect locally and globally</h3>
+        <p>Use digital platforms and social media to share cultural stories and community achievements worldwide, fostering collaboration with international partners.</p>
+      </div>
+      <div class="card">
+        <span class="glyph">08</span>
+        <span class="tag">Facilities</span>
+        <h3>Develop community spaces</h3>
+        <p>Establish, maintain, and operate community centres and recreational facilities for the benefit and enjoyment of the wider community.</p>
+      </div>
+      <div class="card">
+        <span class="glyph">09</span>
+        <span class="tag">Facilities</span>
+        <h3>Build and maintain facilities</h3>
+        <p>Acquire land and develop buildings and facilities for recreational, sports, cultural, and community purposes through purchase, lease, gift, or other means.</p>
+      </div>
+      <div class="card">
+        <span class="glyph">10</span>
+        <span class="tag">Sport</span>
+        <h3>Promote sports and active living</h3>
+        <p>Encourage physical activity and sports development among youth, supporting healthy lifestyles and the growth of young athletes.</p>
+      </div>
+      <div class="card">
+        <span class="glyph">11</span>
+        <span class="tag">Culture</span>
+        <h3>Host and participate in events</h3>
+        <p>Plan, organize, host, and participate in sports and cultural events at provincial, national, and international levels.</p>
+      </div>
+      <div class="card">
+        <span class="glyph">12</span>
+        <span class="tag">Education</span>
+        <h3>Support education and excellence</h3>
+        <p>Offer awards, scholarships, prizes, medals, and educational assistance to deserving members of the community.</p>
+      </div>
+      <div class="card">
+        <span class="glyph">13</span>
+        <span class="tag">Digital</span>
+        <h3>Advance digital literacy</h3>
+        <p>Embrace emerging technologies to enhance advanced digital skills and digital literacy among community members.</p>
+      </div>
+      <div class="card">
+        <span class="glyph">14</span>
+        <span class="tag">Growth</span>
+        <h3>Ensure sustainable growth</h3>
+        <p>Seek and secure funding through government grants, private sponsorships, community donations, and other mission-aligned revenue-generating activities.</p>
+      </div>
+    </div>
+  </section>
+
+  <section data-label="Digital literacy">
+    <div class="split">
+      <div class="media-frame media-reveal tilt reveal">
+        <img src="https://static.wixstatic.com/media/9c6945_296bb6ee3d5d4b0eb54b905b99319463~mv2.jpeg" alt="STARS Club community event">
+      </div>
+      <div class="reveal">
+        <span class="eyebrow">Digital literacy</span>
+        <h2 style="margin-top:18px;">Building skills<br>for the future.</h2>
+        <p style="margin-top:20px;" class="lead">We leverage digital platforms and emerging technologies to enhance digital literacy and showcase community achievements — connecting St. Albert locally and globally.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-elev" data-label="Want to help">
+    <div class="section-head reveal">
+      <span class="eyebrow">Want to help</span>
+      <h2>Every initiative<br>needs people.</h2>
+      <div style="display:flex; gap:16px; flex-wrap:wrap;">
+        <a href="contact.html" class="btn btn-solid">Volunteer with us <span class="arrow">→</span></a>
+        <a href="donate.html" class="btn">Donate <span class="arrow">→</span></a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="footer-grid">
+    <div>
+      <div class="brand footer-reveal" style="margin-bottom:14px;">
+        <img src="https://static.wixstatic.com/media/9c6945_8895c32d035f41459816a5f707f67765~mv2.png" alt="STARS Club logo">
+        <span class="word">STARS CLUB</span>
+      </div>
+      <p>St. Albert Recreation &amp; Sports Cultural Club — building a healthy, inclusive, vibrant community.</p>
+    </div>
+    <div>
+      <h4 class="footer-reveal">Site</h4>
+      <ul>
+        <li><a href="about.html">About</a></li>
+        <li><a href="initiatives.html">Initiatives</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4 class="footer-reveal">Get involved</h4>
+      <ul>
+        <li><a href="donate.html">Donate</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="https://stars-club-link.base44.app" target="_blank" rel="noopener noreferrer">Stars Club Connect</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4 class="footer-reveal">Connect</h4>
+      <ul>
+        <li><a href="mailto:info@starsclub.ca">Email</a></li>
+        <li><a href="tel:+15874085168">WhatsApp</a></li>
+        <li><a href="https://www.facebook.com/profile.php?id=61584946760183" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+        <li><a href="https://www.youtube.com/@St.AlbertRecreationSportsCultu" target="_blank" rel="noopener noreferrer">YouTube</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom footer-reveal">
+    <span>© 2026 St. Albert Recreation &amp; Sports Cultural Club</span>
+    <span>St. Albert, Alberta, Canada</span>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js" integrity="sha384-g4NTh/Iv5PPU4xPyhEWqPcwtNXOvdaDI8LLnyYfyNZOjKJeYQyjzQ9X5275eBjpt" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js" integrity="sha384-Z3REaz79l2IaAZqJsSABtTbhjgOUYyV3p90XNnAPCSHg3EMTz1fouunq9WZRtj3d" crossorigin="anonymous"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

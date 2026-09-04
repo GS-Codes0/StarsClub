@@ -1,0 +1,219 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- ── Security headers ──────────────────────────────────── -->
+  <meta http-equiv="Content-Security-Policy"
+    content="default-src 'self';
+             script-src 'self' https://cdn.jsdelivr.net;
+             style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;
+             font-src https://fonts.gstatic.com;
+             img-src 'self' data: https://static.wixstatic.com https://lh3.googleusercontent.com https://drive.google.com https://*.googleusercontent.com;
+             connect-src 'self' https://docs.google.com https://formspree.io;
+             frame-src 'none';
+             frame-ancestors 'none';
+             base-uri 'self';
+             form-action 'self' https://formspree.io;">
+  <meta http-equiv="X-Frame-Options" content="DENY">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <!-- ─────────────────────────────────────────────────────── -->
+
+  <title>Gallery — STARS Club</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet">
+  <link rel="icon" type="image/png"
+    href="https://static.wixstatic.com/media/9c6945_8895c32d035f41459816a5f707f67765~mv2.png">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <div class="page-transition-overlay"></div>
+  <div class="page-curtain"></div>
+  <div class="floating-orbs">
+    <div class="orb orb--1"></div>
+    <div class="orb orb--2"></div>
+    <div class="orb orb--3"></div>
+  </div>
+  <div class="grain-overlay"></div>
+  <div class="cursor-spotlight"></div>
+  <div class="scroll-progress"></div>
+  <div class="cursor-dot"></div>
+  <button class="back-to-top" aria-label="Back to top">↑</button>
+
+  <header class="site-header">
+    <a href="index.html" class="brand">
+      <img src="https://static.wixstatic.com/media/9c6945_8895c32d035f41459816a5f707f67765~mv2.png"
+        alt="STARS Club logo">
+      <span class="word">STARS CLUB</span>
+    </a>
+    <button class="menu-toggle" aria-label="Open menu">
+      Menu
+      <span class="burger"><span></span><span></span><span></span></span>
+    </button>
+  </header>
+
+  <nav class="nav-overlay">
+  <ul class="nav-list">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="initiatives.html">Initiatives</a></li>
+    <li><a href="donate.html">Donate</a></li>
+    <li><a href="events.html">Events</a></li>
+    <li><a href="gallery.html">Gallery</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  <div class="nav-meta">
+    <a href="mailto:info@starsclub.ca">info@starsclub.ca</a>
+    <a href="tel:+15874085168">+1 587 408 5168</a>
+    <a href="https://www.facebook.com/profile.php?id=61584946760183" target="_blank" rel="noopener noreferrer">Facebook</a>
+    <a href="https://www.youtube.com/@St.AlbertRecreationSportsCultu" target="_blank" rel="noopener noreferrer">YouTube</a>
+  </div>
+  <div class="brand-mark">
+    <img src="https://static.wixstatic.com/media/9c6945_8895c32d035f41459816a5f707f67765~mv2.png" alt="STARS Club logo">
+    <span class="eyebrow">St. Albert, Alberta</span>
+  </div>
+</nav>
+
+  <main>
+    <section class="hero hero--inner" data-label="Moments">
+      <canvas class="hero-canvas" data-density="0.5"></canvas>
+      <img class="hero-watermark is-logo"
+        src="https://static.wixstatic.com/media/9c6945_8895c32d035f41459816a5f707f67765~mv2.png" alt="">
+      <div class="hero-content">
+        <span class="eyebrow">Moments</span>
+        <h1><span class="line">From the</span><span class="line accent-text">community.</span></h1>
+        <p class="lead">A look at our games, events, and the people who make STARS Club what it is. Click any photo to
+          expand.</p>
+      </div>
+    </section>
+
+    <section class="tight">
+      <div class="gallery-filters reveal">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="sport">Sport</button>
+        <button class="filter-btn" data-filter="community">Community</button>
+        <button class="filter-btn" data-filter="facilities">Facilities</button>
+      </div>
+      <p id="gallery-status" class="form-status" style="margin-bottom:18px;"></p>
+      <div class="gallery-grid" id="gallery-grid">
+        <div class="gallery-item tilt" data-category="sport"><img
+            src="https://static.wixstatic.com/media/9c6945_296bb6ee3d5d4b0eb54b905b99319463~mv2.jpeg"
+            alt="STARS Club event"><span class="gi-caption">Game day</span></div>
+        <div class="gallery-item tilt" data-category="community"><img
+            src="https://static.wixstatic.com/media/9c6945_b77d8e1936f34c399f4e40a59610ccc2~mv2.jpeg"
+            alt="STARS Club event"><span class="gi-caption">Community fundraising</span></div>
+        <div class="gallery-item tilt" data-category="sport"><img
+            src="https://static.wixstatic.com/media/9c6945_187c951853fb4963a025508d4b4616e0~mv2.jpeg"
+            alt="STARS Club event"><span class="gi-caption">Sports event</span></div>
+        <div class="gallery-item tilt" data-category="community"><img
+            src="https://static.wixstatic.com/media/9c6945_c99a2916d2604171884de77faeef6429~mv2.jpg"
+            alt="STARS Club event"><span class="gi-caption">Community spirit</span></div>
+        <div class="gallery-item tilt" data-category="sport"><img
+            src="https://static.wixstatic.com/media/9c6945_bc406bd6ac704da795b1dde0ca857944~mv2.jpg"
+            alt="STARS Club event"><span class="gi-caption">Game day</span></div>
+        <div class="gallery-item tilt" data-category="community"><img
+            src="https://static.wixstatic.com/media/9c6945_26dfae79811d49418cbeb1ff93178bc9~mv2.jpeg"
+            alt="STARS Club event"><span class="gi-caption">Local talent</span></div>
+        <div class="gallery-item tilt" data-category="sport"><img
+            src="https://static.wixstatic.com/media/9c6945_5d57e0ad3e34404e80a40acf996e2a2f~mv2.jpeg"
+            alt="STARS Club event"><span class="gi-caption">Badminton &amp; volleyball</span></div>
+        <div class="gallery-item tilt" data-category="community"><img
+            src="https://static.wixstatic.com/media/9c6945_68afcafddde44e2f943e14d22572cce3~mv2.jpeg"
+            alt="STARS Club event"><span class="gi-caption">Community spirit</span></div>
+        <div class="gallery-item tilt" data-category="community"><img
+            src="https://static.wixstatic.com/media/9c6945_8a396e536b3c467c9b3f61d1bb55c21e~mv2.jpeg"
+            alt="STARS Club event"><span class="gi-caption">Local talent</span></div>
+        <div class="gallery-item tilt" data-category="facilities"><img
+            src="https://static.wixstatic.com/media/9c6945_97a223ab5a33427eac8f0244d8e4cfb1~mv2.jpeg"
+            alt="STARS Club event"><span class="gi-caption">SAM gym</span></div>
+        <div class="gallery-item tilt" data-category="community"><img
+            src="https://static.wixstatic.com/media/9c6945_55ae5d100da3458ca4130c6987c89b53~mv2.jpg"
+            alt="STARS Club event"><span class="gi-caption">Community members</span></div>
+        <div class="gallery-item tilt" data-category="facilities"><img
+            src="https://static.wixstatic.com/media/9c6945_c74b51cf3aa44d589d09f5a8a28d4e6d~mv2.jpeg"
+            alt="STARS Club event"><span class="gi-caption">Bellerose facility</span></div>
+      </div>
+    </section>
+
+    <section class="bg-elev tight" data-label="More photos">
+      <div class="inner reveal" style="text-align:center;">
+        <span class="eyebrow" style="justify-content:center;">More photos</span>
+        <h2 style="margin-top:18px;">See our full album.</h2>
+        <p style="margin:18px auto 0; max-width:520px;">We post fresh photos after every game and event.</p>
+        <div style="margin-top:28px;">
+          <a href="https://photos.app.goo.gl/q1vz5iU5z9dFKBgy8" target="_blank" rel="noopener noreferrer"
+            class="btn btn-solid">View full gallery <span class="arrow">→</span></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div class="lightbox">
+    <button class="lightbox-close" aria-label="Close">Close ✕</button>
+    <button class="lightbox-nav prev" aria-label="Previous">‹</button>
+    <img src="" alt="">
+    <button class="lightbox-nav next" aria-label="Next">›</button>
+  </div>
+
+  <footer>
+    <div class="footer-grid">
+      <div>
+        <div class="brand footer-reveal" style="margin-bottom:14px;">
+          <img src="https://static.wixstatic.com/media/9c6945_8895c32d035f41459816a5f707f67765~mv2.png"
+            alt="STARS Club logo">
+          <span class="word">STARS CLUB</span>
+        </div>
+        <p>St. Albert Recreation &amp; Sports Cultural Club — building a healthy, inclusive, vibrant community.</p>
+      </div>
+      <div>
+        <h4 class="footer-reveal">Site</h4>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="initiatives.html">Initiatives</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="footer-reveal">Get involved</h4>
+        <ul>
+          <li><a href="donate.html">Donate</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="https://stars-club-link.base44.app" target="_blank" rel="noopener noreferrer">Stars Club Connect</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="footer-reveal">Connect</h4>
+        <ul>
+          <li><a href="mailto:info@starsclub.ca">Email</a></li>
+          <li><a href="tel:+15874085168">WhatsApp</a></li>
+          <li><a href="https://www.facebook.com/profile.php?id=61584946760183" target="_blank"
+              rel="noopener">Facebook</a></li>
+          <li><a href="https://www.youtube.com/@St.AlbertRecreationSportsCultu" target="_blank"
+              rel="noopener">YouTube</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom footer-reveal">
+      <span>© 2026 St. Albert Recreation &amp; Sports Cultural Club</span>
+      <span>St. Albert, Alberta, Canada</span>
+    </div>
+  </footer>
+
+  <script>
+    // Paste your published Google Sheet CSV link below (see README.md → "Editable photo gallery").
+    // Leave as-is to keep showing the default photos above.
+    window.STARS_GALLERY_SHEET_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vRD6IHZuVW32BEPvmVeiiAiiT_C4dd2FZeHmA84CY2SnIEic9h3m-kxCXSmpAA7PbKLIpkY-MUGQtNp/pub?gid=478040429&single=true&output=csv";
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js" integrity="sha384-g4NTh/Iv5PPU4xPyhEWqPcwtNXOvdaDI8LLnyYfyNZOjKJeYQyjzQ9X5275eBjpt" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js" integrity="sha384-Z3REaz79l2IaAZqJsSABtTbhjgOUYyV3p90XNnAPCSHg3EMTz1fouunq9WZRtj3d" crossorigin="anonymous"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

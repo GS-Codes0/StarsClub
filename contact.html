@@ -1,0 +1,251 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<!-- ── Security headers ──────────────────────────────────── -->
+<meta http-equiv="Content-Security-Policy"
+  content="default-src 'self';
+           script-src 'self' https://cdn.jsdelivr.net;
+           style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;
+           font-src https://fonts.gstatic.com;
+           img-src 'self' data: https://static.wixstatic.com https://lh3.googleusercontent.com https://drive.google.com https://*.googleusercontent.com;
+           connect-src 'self' https://docs.google.com https://formspree.io;
+           frame-src 'none';
+           frame-ancestors 'none';
+           base-uri 'self';
+           form-action 'self' https://formspree.io;">
+<meta http-equiv="X-Frame-Options" content="DENY">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<!-- ─────────────────────────────────────────────────────── -->
+
+<title>Contact — STARS Club</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" href="https://static.wixstatic.com/media/9c6945_8895c32d035f41459816a5f707f67765~mv2.png">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="page-transition-overlay"></div>
+<div class="page-curtain"></div>
+<div class="floating-orbs">
+  <div class="orb orb--1"></div>
+  <div class="orb orb--2"></div>
+  <div class="orb orb--3"></div>
+</div>
+<div class="grain-overlay"></div>
+<div class="cursor-spotlight"></div>
+<div class="scroll-progress"></div>
+<div class="cursor-dot"></div>
+<button class="back-to-top" aria-label="Back to top">↑</button>
+
+<header class="site-header">
+  <a href="index.html" class="brand">
+    <img src="https://static.wixstatic.com/media/9c6945_8895c32d035f41459816a5f707f67765~mv2.png" alt="STARS Club logo">
+    <span class="word">STARS CLUB</span>
+  </a>
+  <button class="menu-toggle" aria-label="Open menu">
+    Menu
+    <span class="burger"><span></span><span></span><span></span></span>
+  </button>
+</header>
+
+<nav class="nav-overlay">
+  <ul class="nav-list">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="initiatives.html">Initiatives</a></li>
+    <li><a href="donate.html">Donate</a></li>
+    <li><a href="events.html">Events</a></li>
+    <li><a href="gallery.html">Gallery</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  <div class="nav-meta">
+    <a href="mailto:info@starsclub.ca">info@starsclub.ca</a>
+    <a href="tel:+15874085168">+1 587 408 5168</a>
+    <a href="https://www.facebook.com/profile.php?id=61584946760183" target="_blank" rel="noopener noreferrer">Facebook</a>
+    <a href="https://www.youtube.com/@St.AlbertRecreationSportsCultu" target="_blank" rel="noopener noreferrer">YouTube</a>
+  </div>
+  <div class="brand-mark">
+    <img src="https://static.wixstatic.com/media/9c6945_8895c32d035f41459816a5f707f67765~mv2.png" alt="STARS Club logo">
+    <span class="eyebrow">St. Albert, Alberta</span>
+  </div>
+</nav>
+
+<main>
+  <section class="hero hero--inner" data-label="Say hello">
+    <canvas class="hero-canvas" data-density="0.5"></canvas>
+    <img class="hero-watermark is-logo" src="https://static.wixstatic.com/media/9c6945_8895c32d035f41459816a5f707f67765~mv2.png" alt="">
+    <div class="hero-content">
+      <span class="eyebrow">Say hello</span>
+      <h1><span class="line">Let's talk</span><span class="line accent-text">STARS.</span></h1>
+      <p class="lead">Questions, ideas, sponsorships, or just want to join — we're here to help.</p>
+    </div>
+  </section>
+
+  <section class="bg-elev" data-label="Get in touch">
+    <div class="split" style="align-items:flex-start;">
+      <div class="reveal">
+        <span class="eyebrow">Get in touch</span>
+        <h2 style="margin-top:18px;">Reach us<br>directly.</h2>
+        <div style="margin-top:36px; display:flex; flex-direction:column; gap:22px;">
+          <div>
+            <span class="eyebrow" style="margin-bottom:6px; display:block;">Email</span>
+            <a href="mailto:info@starsclub.ca" style="font-size:1.2rem;">info@starsclub.ca</a>
+          </div>
+          <div>
+            <span class="eyebrow" style="margin-bottom:6px; display:block;">WhatsApp</span>
+            <a href="https://wa.me/15874085168" target="_blank" rel="noopener noreferrer" style="font-size:1.2rem;">+1 587 408 5168</a>
+          </div>
+          <div>
+            <span class="eyebrow" style="margin-bottom:6px; display:block;">Text</span>
+            <a href="sms:+15877767779" style="font-size:1.2rem;">+1 587 776 7779</a>
+          </div>
+          <div>
+            <span class="eyebrow" style="margin-bottom:6px; display:block;">Based in</span>
+            <span style="font-size:1.2rem;">St. Albert, Alberta, Canada</span>
+          </div>
+        </div>
+        <div style="margin-top:36px; display:flex; gap:16px;">
+          <a href="https://www.facebook.com/profile.php?id=61584946760183" target="_blank" rel="noopener noreferrer" class="tag-pill">Facebook</a>
+          <a href="https://www.youtube.com/@St.AlbertRecreationSportsCultu" target="_blank" rel="noopener noreferrer" class="tag-pill">YouTube</a>
+        </div>
+      </div>
+
+      <div class="reveal">
+        <!--
+          Netlify Forms ready: deploying this site on Netlify auto-detects this
+          form (name="contact", data-netlify="true") — no backend needed.
+          If hosting elsewhere (GitHub Pages, etc), swap the form "action"
+          for a service like Formspree (https://formspree.io) — just change
+          the action URL below to your Formspree endpoint.
+        -->
+        <form id="contact-form" name="contact" method="POST" action="https://formspree.io/f/xykqkrkb">
+          <input type="hidden" name="form-name" value="contact" />
+          <p class="hidden" style="display:none;">
+            <label>Don't fill this out: <input name="bot-field" /></label>
+          </p>
+          <div class="form-grid">
+            <div class="field">
+              <label for="firstName">First name *</label>
+              <input type="text" id="firstName" name="firstName" required>
+            </div>
+            <div class="field">
+              <label for="lastName">Last name *</label>
+              <input type="text" id="lastName" name="lastName" required>
+            </div>
+            <div class="field">
+              <label for="email">Email *</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+            <div class="field">
+              <label for="phone">Phone</label>
+              <input type="tel" id="phone" name="phone">
+            </div>
+            <div class="field full">
+              <label for="reason">I'm reaching out about</label>
+              <select id="reason" name="reason">
+                <option>General question</option>
+                <option>Joining / membership</option>
+                <option>Volunteering</option>
+                <option>Donation / sponsorship</option>
+                <option>Events</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div class="field full">
+              <label for="message">Message *</label>
+              <textarea id="message" name="message" required></textarea>
+            </div>
+            <div class="full">
+              <button type="submit" class="btn btn-solid">Send message <span class="arrow">→</span></button>
+              <p class="form-status"></p>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <section data-label="FAQ">
+    <div class="section-head reveal">
+      <span class="eyebrow">FAQ</span>
+      <h2>Quick<br>answers.</h2>
+    </div>
+    <div class="inner reveal">
+      <div class="accordion">
+        <div class="accordion-item">
+          <button class="accordion-trigger">How do I become a member? <span class="plus">+</span></button>
+          <div class="accordion-panel"><p>Reach out through this form or WhatsApp — we'll send you a membership application form. Single and Family memberships are available to St. Albert-area residents aged 17+.</p></div>
+        </div>
+        <div class="accordion-item">
+          <button class="accordion-trigger">What sports does STARS Club offer? <span class="plus">+</span></button>
+          <div class="accordion-panel"><p>Badminton and volleyball are our core programs — indoors September through May, and volleyball moves outdoors June through August.</p></div>
+        </div>
+        <div class="accordion-item">
+          <button class="accordion-trigger">Can my kids join? <span class="plus">+</span></button>
+          <div class="accordion-panel"><p>Yes — children 12 and under play free under a Family membership, and are welcome at the facility as long as they're supervised by an adult at all times.</p></div>
+        </div>
+        <div class="accordion-item">
+          <button class="accordion-trigger">How can I volunteer? <span class="plus">+</span></button>
+          <div class="accordion-panel"><p>We're a 100% volunteer-led club and always welcome more hands — for events, coordination, coaching, or community outreach. Tell us your interests in the form above.</p></div>
+        </div>
+        <div class="accordion-item">
+          <button class="accordion-trigger">Is STARS Club a registered charity? <span class="plus">+</span></button>
+          <div class="accordion-panel"><p>STARS Club is a newly registered community organization. We're working toward full charitable registration and are transparent about that status with all donors and partners.</p></div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+</main>
+
+<footer>
+  <div class="footer-grid">
+    <div>
+      <div class="brand footer-reveal" style="margin-bottom:14px;">
+        <img src="https://static.wixstatic.com/media/9c6945_8895c32d035f41459816a5f707f67765~mv2.png" alt="STARS Club logo">
+        <span class="word">STARS CLUB</span>
+      </div>
+      <p>St. Albert Recreation &amp; Sports Cultural Club — building a healthy, inclusive, vibrant community.</p>
+    </div>
+    <div>
+      <h4 class="footer-reveal">Site</h4>
+      <ul>
+        <li><a href="about.html">About</a></li>
+        <li><a href="initiatives.html">Initiatives</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4 class="footer-reveal">Get involved</h4>
+      <ul>
+        <li><a href="donate.html">Donate</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="https://stars-club-link.base44.app" target="_blank" rel="noopener noreferrer">Stars Club Connect</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4 class="footer-reveal">Connect</h4>
+      <ul>
+        <li><a href="mailto:info@starsclub.ca">Email</a></li>
+        <li><a href="tel:+15874085168">WhatsApp</a></li>
+        <li><a href="https://www.facebook.com/profile.php?id=61584946760183" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+        <li><a href="https://www.youtube.com/@St.AlbertRecreationSportsCultu" target="_blank" rel="noopener noreferrer">YouTube</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom footer-reveal">
+    <span>© 2026 St. Albert Recreation &amp; Sports Cultural Club</span>
+    <span>St. Albert, Alberta, Canada</span>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js" integrity="sha384-g4NTh/Iv5PPU4xPyhEWqPcwtNXOvdaDI8LLnyYfyNZOjKJeYQyjzQ9X5275eBjpt" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js" integrity="sha384-Z3REaz79l2IaAZqJsSABtTbhjgOUYyV3p90XNnAPCSHg3EMTz1fouunq9WZRtj3d" crossorigin="anonymous"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
