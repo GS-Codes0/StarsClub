@@ -1,12 +1,12 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
+
 <html lang="en">
 
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <!-- ── Security headers ──────────────────────────────────── -->
-  <meta http-equiv="Content-Security-Policy"
-    content="default-src 'self';
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self';
              script-src 'self' https://cdn.jsdelivr.net;
              style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;
              font-src https://fonts.gstatic.com;
@@ -59,26 +59,29 @@
   </header>
 
   <nav class="nav-overlay">
-  <ul class="nav-list">
-    <li><a href="index.html">Home</a></li>
-    <li><a href="about.html">About</a></li>
-    <li><a href="initiatives.html">Initiatives</a></li>
-    <li><a href="donate.html">Donate</a></li>
-    <li><a href="events.html">Events</a></li>
-    <li><a href="gallery.html">Gallery</a></li>
-    <li><a href="contact.html">Contact</a></li>
-  </ul>
-  <div class="nav-meta">
-    <a href="mailto:info@starsclub.ca">info@starsclub.ca</a>
-    <a href="tel:+15874085168">+1 587 408 5168</a>
-    <a href="https://www.facebook.com/profile.php?id=61584946760183" target="_blank" rel="noopener noreferrer">Facebook</a>
-    <a href="https://www.youtube.com/@St.AlbertRecreationSportsCultu" target="_blank" rel="noopener noreferrer">YouTube</a>
-  </div>
-  <div class="brand-mark">
-    <img src="https://static.wixstatic.com/media/9c6945_8895c32d035f41459816a5f707f67765~mv2.png" alt="STARS Club logo">
-    <span class="eyebrow">St. Albert, Alberta</span>
-  </div>
-</nav>
+    <ul class="nav-list">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="initiatives.html">Initiatives</a></li>
+      <li><a href="donate.html">Donate</a></li>
+      <li><a href="events.html">Events</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="nav-meta">
+      <a href="mailto:info@starsclub.ca">info@starsclub.ca</a>
+      <a href="tel:+15874085168">+1 587 408 5168</a>
+      <a href="https://www.facebook.com/profile.php?id=61584946760183" target="_blank"
+        rel="noopener noreferrer">Facebook</a>
+      <a href="https://www.youtube.com/@St.AlbertRecreationSportsCultu" target="_blank"
+        rel="noopener noreferrer">YouTube</a>
+    </div>
+    <div class="brand-mark">
+      <img src="https://static.wixstatic.com/media/9c6945_8895c32d035f41459816a5f707f67765~mv2.png"
+        alt="STARS Club logo">
+      <span class="eyebrow">St. Albert, Alberta</span>
+    </div>
+  </nav>
 
   <main>
     <section class="hero hero--inner" data-label="Support the club">
@@ -99,53 +102,65 @@
 
         <!-- LEFT MODULE: The actual embedded Zeffy window inside your website -->
         <div class="reveal" style="display: flex; flex-direction: column; width: 100%;">
+
           <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 20px;">
-            <h3 style="font-family: var(--font-display); font-size: 1.8rem; text-transform: uppercase; margin: 0;">
-              Online Payments</h3>
-            <span class="tag-pill"
-              style="color: var(--accent); border-color: var(--accent); font-size: 0.75rem; padding: 2px 8px; border: 1px solid; border-radius: 4px;">In-Site
-              Checkout</span>
-          </div>
 
-          <!-- iframe container sized to 860px height to prevent the ugly scrollbar -->
-          <div
-            style="width: 100%; height: 860px; background: transparent; border-radius: 8px; overflow: hidden; border: 1px solid var(--border);">
-            <iframe
-              src="https://www.zeffy.com/en-CA/embed/ticketing/st-albert-recreation-and-sports-cultural-clubs-donations"
-              style="width: 100%; height: 100%; border: none;" allowpaymentrequest="true"
-              title="STARS Club Donation Form">
-            </iframe>
-          </div>
-        </div>
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 8px;">
 
-        <!-- RIGHT MODULE: Direct Local Interac Bank Transfer -->
-        <div class="card reveal"
-          style="border: 1px dashed var(--border-strong); display: flex; flex-direction: column; justify-content: space-between; margin-top: 50px;">
-          <div>
-            <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 14px;">
               <h3 style="font-family: var(--font-display); font-size: 1.8rem; text-transform: uppercase; margin: 0;">
-                Interac e-Transfer</h3>
+                Online Payments</h3>
               <span class="tag-pill"
-                style="color: #52b788; border-color: rgba(82,183,136,0.3); background: rgba(82,183,136,0.05); font-size: 0.75rem; padding: 2px 8px; border: 1px solid; border-radius: 4px;">Direct
-                Deposit</span>
+                style="color: var(--accent); border-color: var(--accent); font-size: 0.75rem; padding: 2px 8px; border: 1px solid; border-radius: 4px;">In-Site
+                Checkout</span>
             </div>
-            <p style="font-size: 0.95rem; color: var(--text-muted); line-height: 1.6; margin-bottom: 24px;">
-              Direct bank transfers bypass external payment networks entirely. Ideal for standard monthly local support
-              or custom donation values that route instantly into our local project fund accounts.
-            </p>
-          </div>
-          <div
-            style="background: rgba(247, 246, 242, 0.03); padding: 16px; border-radius: 6px; border: 1px solid var(--border); width: 100%;">
-            <p style="font-family: var(--font-mono); font-size: 0.85rem; margin-bottom: 6px; color: var(--white);">
-              <span style="color: var(--accent);">Transfer Email:</span> treasurer@starsclub.ca
-            </p>
-            <p style="font-size: 0.8rem; color: var(--text-muted); line-height: 1.4;">
-              *Auto-deposit configured. No security verification questions required.
-            </p>
-          </div>
-        </div>
 
-      </div>
+
+            <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 20px; line-height: 1.5;">
+              Please note: All online payments are securely processed and managed by Zeffy. STARS Club does not directly
+              handle or store your financial information.
+            </p>
+
+
+            <!-- iframe container sized to 860px height to prevent the ugly scrollbar -->
+            <div
+              style="width: 100%; height: 860px; background: transparent; border-radius: 8px; overflow: hidden; border: 1px solid var(--border);">
+              <iframe
+                src="https://www.zeffy.com/en-CA/embed/ticketing/st-albert-recreation-and-sports-cultural-clubs-donations"
+                style="width: 100%; height: 100%; border: none;" allowpaymentrequest="true"
+                title="STARS Club Donation Form">
+              </iframe>
+            </div>
+          </div>
+
+          <!-- RIGHT MODULE: Direct Local Interac Bank Transfer -->
+          <div class="card reveal"
+            style="border: 1px dashed var(--border-strong); display: flex; flex-direction: column; justify-content: space-between; margin-top: 50px;">
+            <div>
+              <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 14px;">
+                <h3 style="font-family: var(--font-display); font-size: 1.8rem; text-transform: uppercase; margin: 0;">
+                  Interac e-Transfer</h3>
+                <span class="tag-pill"
+                  style="color: #52b788; border-color: rgba(82,183,136,0.3); background: rgba(82,183,136,0.05); font-size: 0.75rem; padding: 2px 8px; border: 1px solid; border-radius: 4px;">Direct
+                  Deposit</span>
+              </div>
+              <p style="font-size: 0.95rem; color: var(--text-muted); line-height: 1.6; margin-bottom: 24px;">
+                Direct bank transfers bypass external payment networks entirely. Ideal for standard monthly local
+                support
+                or custom donation values that route instantly into our local project fund accounts.
+              </p>
+            </div>
+            <div
+              style="background: rgba(247, 246, 242, 0.03); padding: 16px; border-radius: 6px; border: 1px solid var(--border); width: 100%;">
+              <p style="font-family: var(--font-mono); font-size: 0.85rem; margin-bottom: 6px; color: var(--white);">
+                <span style="color: var(--accent);">Transfer Email:</span> treasurer@starsclub.ca
+              </p>
+              <p style="font-size: 0.8rem; color: var(--text-muted); line-height: 1.4;">
+                *Auto-deposit configured. No security verification questions required.
+              </p>
+            </div>
+          </div>
+
+        </div>
     </section>
 
     <section class="bg-elev" data-label="Where it goes">
@@ -226,7 +241,7 @@
       </div>
     </section>
 
-    
+
   </main>
 
   <footer>
@@ -253,7 +268,8 @@
         <ul>
           <li><a href="donate.html">Donate</a></li>
           <li><a href="contact.html">Contact</a></li>
-          <li><a href="https://stars-club-link.base44.app" target="_blank" rel="noopener noreferrer">Stars Club Connect</a></li>
+          <li><a href="https://stars-club-link.base44.app" target="_blank" rel="noopener noreferrer">Stars Club
+              Connect</a></li>
         </ul>
       </div>
       <div>
@@ -274,8 +290,12 @@
     </div>
   </footer>
 
-  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js" integrity="sha384-g4NTh/Iv5PPU4xPyhEWqPcwtNXOvdaDI8LLnyYfyNZOjKJeYQyjzQ9X5275eBjpt" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js" integrity="sha384-Z3REaz79l2IaAZqJsSABtTbhjgOUYyV3p90XNnAPCSHg3EMTz1fouunq9WZRtj3d" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"
+    integrity="sha384-g4NTh/Iv5PPU4xPyhEWqPcwtNXOvdaDI8LLnyYfyNZOjKJeYQyjzQ9X5275eBjpt"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"
+    integrity="sha384-Z3REaz79l2IaAZqJsSABtTbhjgOUYyV3p90XNnAPCSHg3EMTz1fouunq9WZRtj3d"
+    crossorigin="anonymous"></script>
   <script src="js/main.js"></script>
 </body>
 

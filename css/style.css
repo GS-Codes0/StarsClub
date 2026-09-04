@@ -1451,6 +1451,7 @@ footer {
 .lightbox img.is-changing { opacity: 0; }
 
 /* ==========================================================================
+<<<<<<< HEAD
    FULL-YEAR CALENDAR
    ========================================================================== */
 .calendar-wrapper {
@@ -1833,6 +1834,8 @@ footer {
 }
 
 /* ==========================================================================
+=======
+
    Reduced motion safety net
    ========================================================================== */
 @media (prefers-reduced-motion: reduce) {
@@ -1840,5 +1843,6 @@ footer {
   .page-transition-overlay { display: none !important; }
   .site-header { transition: none !important; transform: none !important; }
   .showcase-card.is-focused, .showcase-card.is-defocused { transform: none !important; }
+
   .cal-day.cal-animate { animation: none !important; }
 }
